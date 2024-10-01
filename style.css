@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: 10vh 30vh 30vh 20vh;
+    height: 50px;
+    width: 100vw;
+}
+
+/* this is for navigation area */
+.left-side {
+    grid-row: 1/2 !important;
+    grid-column: 1/2;
+    /* border: 2px solid black; */
+}
+
+.right-side {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: flex-end;
+
+}
+
+.icon {
+    height: 30px;
+}
+
+/* this is the end of navigation area */
+
+
+
+/* this area is for log and serch bar */
+
+.logo {
+    justify-self: center;
+    /* border: 2px solid black; */
+    height: 92px;
+    object-fit: contain;
+    width: 270px;
+}
+
+.logo-container {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.search-bar-container {
+    /* display: flex; */
+    border: 1px solid black;
+    height: 30px;
+    margin-left: 50px;
+    margin-bottom: 23 px !important;
+    /* justify-content: center; */
+    width: 520px;
+    /* this need to be width  */
+    border-radius: 27px;
+    box-shadow: 2px 4px 5px gray;
+    grid-column: 2/3;
+    grid-row: 3/3;
+}
+
+.mic-icon {
+    height: 20px;
+    object-fit: contain;
+    width: 20px;
+}
+
+.google-search {
+    height: 30px;
+    width: 443px;
+    border: none;
+    /* margin-bottom:3; */
+    justify-self: center;
+
+}
+
+@media screen and (max-width:1100px) {
+    .link {
+        font-size: 13px;
+    }
+
+    .icon {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:590px) {
+    .icon {
+        height: 25px;
+    }
+
+    .logo {
+        width: 260px;
+    }
+    .search-bar-container{
+        width:400px ;
+
+    }
+    .google-search{
+        width: 360px;
+        /* margin-bottom:; */
+
+    }
+    .mic-icon{
+        height: 15px;
+        width: 15px;
+
+    }
+
+}
+
+.link {
+    font-size: 10px;
+}
+
+@media screen and (max-width:490px) {
+    .icon {
+        height: 10px;
+    }
+
+    .logo {
+        width: 220px;
+    }
+}
+
+.link {
+    font-size: 7px;
+}
+
+@media screen and (max-width:3px) {}
